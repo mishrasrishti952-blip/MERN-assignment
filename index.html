@@ -6,49 +6,34 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <h1>Registration Form</h1>
-    <form>
-        <label for="date">date:</label>
-        <input type="date"
-        id="date" name="date">
-        <br></br>
+    <h2>Upcoming Events</h2>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>web development workshop</td>
+                    <td>26-10-2026</td>
+                    <td>Agra</td>
+                </tr>
+                <tr>
+                    <td>HTML coding Competition</td>
+                    <td>2026-10-26</td>
+                    <td>Noida</td>
 
-        <label for="phone">phone:</label>
-        <input type="tel" id="phone" name="phone">
-        <br></br>
-
-        <p>Gender:</p>
-        <input type="radio"
-         id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio"
-         id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <br></br>
-
-        <p>choose your Hobbies:</p>
-        <input type="checkbox"
-         id="reading" name="hobbies"
-         value="reading">
-         <label for="reading">reading:</label>
-         <input type="checkbox"
-          id="gaming" name="hobbies"
-          value="gaming">
-          <label for="gaming">gaming:</label>
-
-          <label for="course">select your course:</label>
-          <select id="course" name="course">
-            <option value="cs">Computer Science</option>
-            <option value="it">Information Technology</option>
-            <option value="ec">Electronics and Communication</option>
-          </select>
-
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="4" cols="30"
-            placeholder="write your message here"></textarea>
-            <br></br>
-          
-          <button type="submit">submit</button>
-    </form>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Events: 2</td>
+                </tr>
+            </tfoot>
+        </table>
 </body>
 </html>
