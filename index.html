@@ -307,6 +307,122 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean CSS Classes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 18px 25px;
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 24px;
+        }
+
+       
+        .page-content {
+            padding: 25px;
+        }
+
+        .page-title {
+            text-align: center;
+        }
+
+        
+        .content-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            background-color: white;
+        }
+
+        .card-title {
+            margin-top: 0;
+            color: #2563eb;
+        }
+
+        
+        .add-button {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            z-index: 2000;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background-color: #16a34a;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        .add-button:hover {
+            background-color: #15803d;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="site-title">My Website</h1>
+    </header>
+
+    <main class="page-content">
+        <h2 class="page-title">welcome to my website</h2>
+
+        <section class="content-card">
+            <h3 class="card-title">About Us</h3>
+            <p>we are the students of section E.</p>
+        </section>
+
+        <section class="content-card">
+            <h3 class="card-title">Our course</h3>
+            <p>we are pursuing BTech CSE.</p>
+        </section>
+
+        <section class="content-card">
+            <h3 class="card-title">Our College</h3>
+            <p>At Invertis University.</p>
+        </section>
+
+        <section class="content-card">
+            <h3 class="card-title">AIM</h3>
+            <p>Become a successful software engineer.</p>
+        </section>
+    </main>
+
+    <button
+        class="add-button"
+        type="button"
+        aria-label="Add item"
+    >+</button>
+</body>
+</html>
+
 
 
 
