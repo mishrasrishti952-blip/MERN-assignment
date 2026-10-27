@@ -199,6 +199,114 @@
     
 </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Bar and Fixed Button</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #2563eb;
+            color: white;
+            padding: 18px 25px;
+            font-size: 20px;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 1px solid #cbd5e1;
+        }
+
+        
+        .plus-button {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            z-index: 2000;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background: #16a34a;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px #0003;
+        }
+
+        .plus-button:hover {
+            background: #15803d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="top-bar">
+        My Website
+    </header>
+
+    <main>
+        <h1>Sticky and Fixed Position</h1>
+        <p>Scroll down to test the top bar and plus button.</p>
+
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is sample website content.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>The top bar stays at the top when scrolling.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>The plus button stays fixed at the bottom-right.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 4</h2>
+            <p>Keep scrolling to test the sticky header.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 5</h2>
+            <p>The z-index controls which element appears in front.</p>
+        </div>
+    </main>
+
+    <button class="plus-button" type="button" aria-label="Add item">
+        +
+    </button>
+
+</body>
+</html>
+
 
 
 
