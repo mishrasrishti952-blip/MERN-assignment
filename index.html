@@ -41,6 +41,11 @@
         text-decoration: none;
       }
 
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
       img {
         max-width: 100%;
         height: auto;
@@ -143,6 +148,11 @@
         text-align: center;
       }
 
+      .hero .container {
+        display: grid;
+        justify-items: center;
+      }
+
       .eyebrow {
         margin: 0 0 0.75rem;
         color: var(--accent);
@@ -172,9 +182,15 @@
         background: #edf2ed;
       }
 
+      .services .container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+
       .section-heading {
         max-width: 36rem;
-        margin: 0 auto 2rem;
+        margin: 0 auto;
         text-align: center;
       }
 
