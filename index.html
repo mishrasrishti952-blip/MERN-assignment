@@ -88,9 +88,46 @@
       line-height: 1.6;
     }
 
+    .card-section {
+      padding: 3rem 2rem;
+    }
+
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      padding: 1.5rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.75rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgb(15 23 42 / 6%);
+    }
+
+    .card h2 {
+      margin: 0 0 0.75rem;
+      color: #172554;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.6;
+    }
+
     @media (max-width: 600px) {
       .navbar {
         padding: 1rem;
+      }
+
+      .card-section {
+        padding: 2rem 1rem;
       }
 
       .navbar-right {
@@ -119,6 +156,22 @@
     <section class="banner">
       <h1>Welcome to our site</h1>
       <p>Discover what we can do for you and find the right solution for your needs.</p>
+    </section>
+    <section class="card-section" aria-label="Our services">
+      <div class="card-row">
+        <article class="card">
+          <h2>Web Design</h2>
+          <p>Thoughtful, user-friendly designs for your online presence.</p>
+        </article>
+        <article class="card">
+          <h2>Development</h2>
+          <p>Reliable websites built to work smoothly across devices.</p>
+        </article>
+        <article class="card">
+          <h2>Support</h2>
+          <p>Helpful guidance to keep your projects moving forward.</p>
+        </article>
+      </div>
     </section>
   </main>
 </body>
