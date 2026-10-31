@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    }
+
+    .logo {
+      color: #172554;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-links a {
+      color: #334155;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    .nav-button {
+      padding: 0.65rem 1rem;
+      border: 0;
+      border-radius: 0.4rem;
+      background: #2563eb;
+      color: #fff;
+      font: inherit;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      background: #1d4ed8;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 1rem;
+      }
+
+      .nav-right {
+        gap: 0.75rem;
+      }
+
+      .nav-links {
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="#">website</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+      </div>
+      <a class="nav-button" href="#contact">Contact us</a>
+    </div>
+  </nav>
+</body>
+</html>
