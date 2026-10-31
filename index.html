@@ -64,6 +64,30 @@
       cursor: pointer;
     }
 
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+      padding: 2rem;
+      background: #eff6ff;
+      color: #172554;
+      text-align: center;
+    }
+
+    .banner h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    .banner p {
+      max-width: 36rem;
+      margin: 0;
+      color: #475569;
+      line-height: 1.6;
+    }
+
     @media (max-width: 600px) {
       .navbar {
         padding: 1rem;
@@ -91,5 +115,11 @@
       <button class="navbar-button" type="button">Get started</button>
     </div>
   </nav>
+  <main>
+    <section class="banner">
+      <h1>Welcome to our site</h1>
+      <p>Discover what we can do for you and find the right solution for your needs.</p>
+    </section>
+  </main>
 </body>
 </html>
