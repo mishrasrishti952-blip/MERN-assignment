@@ -64,14 +64,20 @@
     }
 
     .grid-item {
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
       min-height: 140px;
       border-radius: 12px;
       background: #2563eb;
       color: white;
       font-size: 1.25rem;
       font-weight: bold;
+    }
+
+    .grid-icon {
+      font-size: 1.5rem;
     }
 
     @media (max-width: 600px) {
@@ -99,12 +105,12 @@
     <aside class="side" aria-label="Sidebar">Side</aside>
     <main class="main">
       <section class="cards" aria-label="Grid of cards">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">★</span><span>Item 1</span></div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">♥</span><span>Item 2</span></div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">⚡</span><span>Item 3</span></div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">☘</span><span>Item 4</span></div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">♫</span><span>Item 5</span></div>
+        <div class="grid-item"><span class="grid-icon" aria-hidden="true">☀</span><span>Item 6</span></div>
       </section>
     </main>
     <footer class="foot">Foot</footer>
