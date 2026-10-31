@@ -1,0 +1,82 @@
+/* Root Variables */
+:root {
+    /* Colours */
+    --primary-color: blue;
+    
+
+    /* Spacing */
+    --spacing: 20px;
+   
+
+/* All Elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: var(--spacing-medium);
+}
+
+/* Heading */
+h1, h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    padding: var(--spacing-medium);
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-right: var(--spacing-small);
+}
+
+/* Card */
+.card {
+    background-color: var(--white-color);
+    padding: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    background-color: var(--white-color);
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-medium);
+    border-radius: 8px;
+}
+
+input,
+select,
+textarea {
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+/* Button */
+button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--spacing-small) var(--spacing-large);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: var(--spacing-extra-large);
+    padding: var(--spacing-medium);
+    text-align: center;
+}

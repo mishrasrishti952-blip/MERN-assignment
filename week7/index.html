@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #172554;
+    }
+
+    .landing-header {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      color: #172554;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #1d4ed8;
+    }
+
+    .navbar-button {
+      padding: 0.65rem 1rem;
+      border: 1px solid #2563eb;
+      border-radius: 0.4rem;
+      background: #fff;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem 5rem;
+      color: #172554;
+      text-align: center;
+    }
+
+    .banner h1 {
+      max-width: 48rem;
+      margin: 0 0 1rem;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1;
+    }
+
+    .banner p {
+      max-width: 36rem;
+      margin: 0;
+      color: #334155;
+      font-size: 1.125rem;
+      line-height: 1.7;
+    }
+
+    .banner-button {
+      display: inline-block;
+      margin-top: 1.75rem;
+      padding: 0.85rem 1.25rem;
+      border-radius: 0.4rem;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .card-section {
+      padding: 3rem 2rem;
+    }
+
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      padding: 1.5rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.75rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgb(15 23 42 / 6%);
+    }
+
+    .card h2 {
+      margin: 0 0 0.75rem;
+      color: #172554;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 1rem;
+      }
+
+      .banner {
+        min-height: 55vh;
+        padding: 3rem 1rem 4rem;
+      }
+
+      .card-section {
+        padding: 2rem 1rem;
+      }
+
+      .navbar-right {
+        gap: 0.75rem;
+      }
+
+      .nav-links {
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="landing-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">Brand</a>
+      <div class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+        <a class="navbar-button" href="#services">Get started</a>
+      </div>
+    </nav>
+    <section class="banner">
+      <h1>Build something great with us</h1>
+      <p>Discover thoughtful design, reliable development, and friendly support to bring your ideas to life.</p>
+      <a class="banner-button" href="#services">Explore our services</a>
+    </section>
+  </header>
+  <main>
+    <section class="card-section" id="services" aria-label="Our services">
+      <div class="card-row">
+        <article class="card">
+          <h2>Web Design</h2>
+          <p>Thoughtful, user-friendly designs for your online presence.</p>
+        </article>
+        <article class="card">
+          <h2>Development</h2>
+          <p>Reliable websites built to work smoothly across devices.</p>
+        </article>
+        <article class="card">
+          <h2>Support</h2>
+          <p>Helpful guidance to keep your projects moving forward.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
